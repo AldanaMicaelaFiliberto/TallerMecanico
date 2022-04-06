@@ -3,13 +3,13 @@
     padding: 0px;
 }
 
-diseño-grid {
+/* diseño-grid {
     display: grid;
     grid-template-rows: 2fr 5fr 2fr;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: " nav nav nav " " main main main" " footer footer footer ";
-}
-
+} */
+/* 
 nav {
     grid-area: nav;
 }
@@ -21,15 +21,17 @@ main {
 footer {
     grid-area: footer;
 }
-
+ */
 
 /* -------------------------------------------------------NAV------------------------------------------------------- */
-
-nav {
+.container-fluid{
+margin:0px;
+padding: 0px;
+}
+ .nav {
     background-color: #34597a;
-    /* opacity: 0.5; */
     width: 99vw;
-    /* height: 100px;  */
+    height: 100px; 
     position: fixed;
     z-index: 100;
     margin-top: -6vh;
@@ -39,7 +41,8 @@ nav {
     flex-wrap: wrap;
 }
 
-nav h1 {
+
+.nav h1 {
     background: transparent;
     /* margin-left:-50px; */
     display: inline-block;
@@ -51,7 +54,7 @@ nav h1 {
     color: #ffffff;
 }
 
-nav ul {
+.nav ul {
     /* display: inline-block; */
     /* margin-right: 100px;  */
     /* padding: 10px; */
@@ -64,12 +67,12 @@ nav ul {
     /* top: 2vw; */
 }
 
-nav ul li {
+.nav ul li {
     display: inline;
     margin: 3vw;
 }
 
-nav a {
+.nav a {
     padding: 1vw;
     text-decoration: none;
     background-color: silver;
@@ -82,7 +85,7 @@ nav a {
     /* margin: 30px; */
 }
 
-nav ul li:hover a {
+.nav ul li:hover a {
     color: white;
     font-weight: 700;
 }
@@ -95,7 +98,6 @@ main {
 }
 .fondo {
     width: 99vw;
-    height: 100vh;
     opacity: 0.7;
 }
 
@@ -106,7 +108,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     width: 50vw;
-    top: 26vh;
+    top: 20vh;
     left: 23%;
     margin: 3vw auto;
     padding: 2%;
@@ -425,26 +427,21 @@ section ul li {
     display: inline-block;
     box-shadow: #4d4d4d 3px 3px 3px 3px;
     padding: 5px 15px;
-    margin:0 30px;
+    margin:0 0px;
 }
 
 .formulario-contacto label,
 .formulario-contacto input,
 textarea {
     margin: 15px;
-    font-size: 20px;
+    font-size: 15px;
     display: block;
-}
-
-.boton-enviar {
-    padding: 5px;
-    background-color: brown;
 }
 
 .contenedor-formularios{
     position:absolute;
     top:125px;
-    left:18%;
+    left:10%;
     display:flex;
     justify-content: space-around;
     margin:auto;
@@ -461,6 +458,8 @@ textarea {
     color: white;
     font-family: 'Roboto Serif', sans-serif;
     font-size: 40px;
+    position:relative;
+    top:56px;
 }
 
 .nosotros {
