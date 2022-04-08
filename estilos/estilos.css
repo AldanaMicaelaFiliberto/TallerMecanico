@@ -276,6 +276,34 @@ main {
     background-color: #494949;
     margin: 30px;
     background-image: linear-gradient(to bottom , rgb(52, 160, 124),#353636 );
+    animation: titulo 5s infinite;
+
+}
+
+
+@keyframes titulo {
+
+    0%{
+        background-image: linear-gradient(to bottom , rgb(52, 160, 124),#353636 );
+    }
+    20%{
+        background-image: linear-gradient(to bottom , rgb(128, 42, 208),#353636 );
+    }
+    40%{
+        background-image: linear-gradient(to bottom , rgb(208, 42, 89),#353636 );
+    }
+    60%{
+        background-image: linear-gradient(to bottom , rgb(243, 33, 33),#353636 );
+    }
+    80%{
+        background-image: linear-gradient(to bottom , rgb(33, 243, 117),#353636 );
+    }
+    100%{
+        background-image: linear-gradient(to bottom , rgb(243, 205, 33),#353636 );
+    }
+
+    
+
 }
 
 .imagenes {
@@ -378,6 +406,7 @@ section ul li {
     font-size: 20px;
     padding: 10px 20px;
     transition: all 1s;
+    animation: mianimacion 5s infinite;
 }
 
 
@@ -402,7 +431,28 @@ section ul li {
     box-shadow: #303030 6px 6px 6px 6px;
 
 }
+@keyframes mianimacion {
+	
+    0%{
+        background:rgb(52, 160, 124);
+    }
+    20%{
+        background:rgb(128, 42, 208);
+    }
+    40%{
+        background: rgb(208, 42, 89);
+    }
+    60%{
+        background: rgb(243, 33, 33);
+    }
+    80%{
+        background:rgb(33, 243, 117);
+    }
+    100%{
+        background:rgb(243, 205, 33);
+    }
 
+}
 
 /* -------------------------------------CONTACTO------------------------------------------------- */
 
@@ -447,6 +497,10 @@ textarea {
     margin:auto;
 }
 
+.button {
+    background-color: #f12020;
+    
+}
 
 /* ------------------------------------NOSOTROS----------------------------------------- */
 
