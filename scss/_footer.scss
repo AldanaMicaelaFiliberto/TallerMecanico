@@ -1,0 +1,64 @@
+/* ----------------------------------------FOOTER-------------------------------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 99vw;
+    background-color: #34597a;
+    padding: 1vh 0px;
+
+    section {
+        font-size: 100%;
+        padding: 1%;
+        a {
+            img {
+            width: 30px;
+            }
+        }
+        h3 {
+            font-size: 150%;
+        }
+
+        ul {
+            li {
+                list-style: none;
+                a{
+                    line-height: 130%;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 90%;
+                }
+            }
+        }
+
+        // section ul li a,
+        // section a {
+        //     line-height: 130%;
+        //     text-align: center;
+        //     text-decoration: none;
+        //     font-size: 90%;
+        // }
+
+
+
+
+    }
+}
+
+
+.mapa {
+    width: 20vw;
+    height: 20vh;
+}
+
+
+.footer-section {
+    align-self: flex-end;
+
+    p{
+        font-size: 90%;
+    }
+}

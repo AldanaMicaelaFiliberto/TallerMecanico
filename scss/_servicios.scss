@@ -1,0 +1,74 @@
+/* --------------------------- SERVICIOS------------------------------ */
+
+.contenedor-servicios {
+    width: 90vw;
+    margin: 0 auto;
+    position:relative;
+    top:20vh;
+    padding:0vh 0 20vh 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.subtitulo {
+    text-align: center;
+    text-decoration: underline #1d7979;
+}
+.servicio {
+    width: 300px;
+    border: solid #aaaaaa 1px;
+    margin: 30px 12px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all 1s;
+    animation: mianimacion 5s infinite;
+
+    img {
+        width: 120px;
+        margin: 10px auto;
+        transition: all 1s;
+    }
+    ul {
+        text-align: justify;
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    &:hover {
+        border:5px solid rgb(54, 107, 107);
+        transform: scale(1.2,1.2);
+        border-radius: 10px;
+        box-shadow: #303030 6px 6px 6px 6px;
+    
+    }
+}
+
+
+
+
+
+@keyframes mianimacion {
+	
+    0%{
+        background:rgb(52, 160, 124);
+    }
+    20%{
+        background:rgb(128, 42, 208);
+    }
+    40%{
+        background: rgb(208, 42, 89);
+    }
+    60%{
+        background: rgb(243, 33, 33);
+    }
+    80%{
+        background:rgb(33, 243, 117);
+    }
+    100%{
+        background:rgb(243, 205, 33);
+    }
+
+}

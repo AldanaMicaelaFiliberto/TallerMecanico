@@ -1,0 +1,59 @@
+/* -------------------------------------CONTACTO------------------------------------------------- */
+
+.info-contacto-titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: black;
+    color: brown;
+    font-size: 30px;
+}
+
+.info-contacto {
+    padding: 5px 15px;
+    display: inline-block;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 20px;
+    box-shadow: #4d4d4d 3px 3px 3px 3px;
+    margin:0 30px;
+}
+
+.formulario-contacto {
+    display: inline-block;
+    box-shadow: #4d4d4d 3px 3px 3px 3px;
+    padding: 5px 15px;
+    margin:0 0px;
+
+    label {
+        margin: 15px;
+        font-size: 15px;
+        display: block;
+    }
+    
+    input {
+        margin: 15px;
+        font-size: 15px;
+        display: block;
+    }
+
+    text-area {
+
+        margin: 15px;
+        font-size: 15px;
+        display: block;
+    }
+
+}
+
+.contenedor-formularios{
+    position:absolute;
+    top:125px;
+    left:10%;
+    display:flex;
+    justify-content: space-around;
+    margin:auto;
+}
+
+.button {
+    background-color: #f12020;
+    
+}

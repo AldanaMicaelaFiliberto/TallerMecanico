@@ -24,10 +24,6 @@ footer {
  */
 
 /* -------------------------------------------------------NAV------------------------------------------------------- */
-.container-fluid{
-margin:0px;
-padding: 0px;
-}
  .nav {
     background-color: #34597a;
     width: 99vw;
@@ -157,6 +153,7 @@ main {
     transform: scale(1.2,1.5);
 }
 
+/* 
 @media screen and (max-width: 1024px) {
     .presentacion {
         width: 50vw;
@@ -268,6 +265,8 @@ main {
         height: 6vh;
     }
 }
+*/
+
 
 .titulo-galeria {
     text-align: center;
@@ -321,11 +320,7 @@ main {
     margin: 1%;
 }
 
-.titulo-consejos {
-    text-decoration: underline 3px;
-    text-align: center;
-    margin-bottom: 10px;
-}
+
 
 
 /* ----------------------------------------FOOTER-------------------------------------------------- */
@@ -589,4 +584,9 @@ textarea {
     font-family: 'Bebas Neue';
     font-size: 100%;
     color: #000000;
+}
+.titulo-consejos {
+    text-decoration: underline 3px;
+    text-align: center;
+    margin-bottom: 10px;
 }

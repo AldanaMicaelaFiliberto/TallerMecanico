@@ -1,0 +1,430 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* diseño-grid {
+    display: grid;
+    grid-template-rows: 2fr 5fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: " nav nav nav " " main main main" " footer footer footer ";
+} */
+/* 
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+ */
+/* -------------------------------------------------------NAV------------------------------------------------------- */
+.nav {
+  background-color: #34597a;
+  width: 99vw;
+  position: fixed;
+  z-index: 100;
+  margin-top: -6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .nav h1 {
+    background: transparent;
+    /* margin-left:-50px; */
+    display: inline-block;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 76px;
+    /*border:solid;*/
+    /* text-shadow:#000000 3px 3px 10px; */
+    color: #ffffff; }
+  .nav ul {
+    /* display: inline-block; */
+    /* margin-right: 100px;  */
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    /* left: 250px; */
+    /* top: 2vw; */ }
+    .nav ul li {
+      display: inline;
+      margin: 2vw; }
+      .nav ul li:hover a {
+        color: white;
+        font-weight: 700; }
+  .nav a {
+    padding: 1vw;
+    text-decoration: none;
+    background-color: silver;
+    border: solid 3px;
+    box-shadow: #4d4d4d 3px 3px;
+    border-radius: 0.5em;
+    color: black;
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 15px;
+    /* margin: 30px; */ }
+
+/* ---------------------------------INDEX------------------------------------------------ */
+.main-index {
+  margin-top: 6vh; }
+
+.fondo {
+  width: 99vw;
+  opacity: 0.7;
+  height: 900px; }
+
+.presentacion {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50vw;
+  top: 20vh;
+  left: 23%;
+  margin: 3vw auto;
+  padding: 2%;
+  background-color: transparent;
+  font-size: 5em;
+  box-shadow: #303030 6px 6px 6px 6px;
+  transition: all 1s; }
+  .presentacion:hover {
+    transform: scale(1, 1.2);
+    border-radius: 10px;
+    box-shadow: #303030 6px 6px 6px 6px; }
+  .presentacion div p {
+    padding: 1%;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Roboto Serif', sans-serif; }
+    .presentacion div p b {
+      font-family: 'Monoton', cursive; }
+
+.mediosPago {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2%; }
+  .mediosPago img {
+    width: 6vw;
+    height: 6vh;
+    margin: 0 8px;
+    transition: all 1s; }
+    .mediosPago img:hover {
+      transform: scale(1.2, 1.5); }
+
+.titulo-galeria {
+  text-align: center;
+  font-size: 4vw;
+  font-family: 'Bebas Neue';
+  background-color: #494949;
+  margin: 30px;
+  background-image: linear-gradient(to bottom, #34a07c, #353636);
+  animation: titulo 5s infinite; }
+
+@keyframes titulo {
+  0% {
+    background-image: linear-gradient(to bottom, #34a07c, #353636); }
+  20% {
+    background-image: linear-gradient(to bottom, #802ad0, #353636); }
+  40% {
+    background-image: linear-gradient(to bottom, #d02a59, #353636); }
+  60% {
+    background-image: linear-gradient(to bottom, #f32121, #353636); }
+  80% {
+    background-image: linear-gradient(to bottom, #21f375, #353636); }
+  100% {
+    background-image: linear-gradient(to bottom, #f3cd21, #353636); } }
+
+.imagenes {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 99vw; }
+
+.imagen {
+  /* max-width: 36vw; */
+  min-width: 40vw;
+  width: 40vw;
+  margin: 1%; }
+
+/* ----------------------------------------FOOTER-------------------------------------------------- */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 99vw;
+  background-color: #34597a;
+  padding: 1vh 0px; }
+  footer section {
+    font-size: 100%;
+    padding: 1%; }
+    footer section a img {
+      width: 30px; }
+    footer section h3 {
+      font-size: 150%; }
+    footer section ul li {
+      list-style: none; }
+      footer section ul li a {
+        line-height: 130%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 90%; }
+
+.mapa {
+  width: 20vw;
+  height: 20vh; }
+
+.footer-section {
+  align-self: flex-end; }
+  .footer-section p {
+    font-size: 90%; }
+
+/* --------------------------- SERVICIOS------------------------------ */
+.contenedor-servicios {
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+  top: 20vh;
+  padding: 0vh 0 20vh 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.subtitulo {
+  text-align: center;
+  text-decoration: underline #1d7979; }
+
+.servicio {
+  width: 300px;
+  border: solid #aaaaaa 1px;
+  margin: 30px 12px;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: all 1s;
+  animation: mianimacion 5s infinite; }
+  .servicio img {
+    width: 120px;
+    margin: 10px auto;
+    transition: all 1s; }
+  .servicio ul {
+    text-align: justify;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 25px; }
+  .servicio:hover {
+    border: 5px solid #366b6b;
+    transform: scale(1.2, 1.2);
+    border-radius: 10px;
+    box-shadow: #303030 6px 6px 6px 6px; }
+
+@keyframes mianimacion {
+  0% {
+    background: #34a07c; }
+  20% {
+    background: #802ad0; }
+  40% {
+    background: #d02a59; }
+  60% {
+    background: #f32121; }
+  80% {
+    background: #21f375; }
+  100% {
+    background: #f3cd21; } }
+
+/* -------------------------------------CONTACTO------------------------------------------------- */
+.info-contacto-titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: black;
+  color: brown;
+  font-size: 30px; }
+
+.info-contacto {
+  padding: 5px 15px;
+  display: inline-block;
+  line-height: 35px;
+  font-weight: 500;
+  font-size: 20px;
+  box-shadow: #4d4d4d 3px 3px 3px 3px;
+  margin: 0 30px; }
+
+.formulario-contacto {
+  display: inline-block;
+  box-shadow: #4d4d4d 3px 3px 3px 3px;
+  padding: 5px 15px;
+  margin: 0 0px; }
+  .formulario-contacto label {
+    margin: 15px;
+    font-size: 15px;
+    display: block; }
+  .formulario-contacto input {
+    margin: 15px;
+    font-size: 15px;
+    display: block; }
+  .formulario-contacto text-area {
+    margin: 15px;
+    font-size: 15px;
+    display: block; }
+
+.contenedor-formularios {
+  position: absolute;
+  top: 125px;
+  left: 10%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto; }
+
+.button {
+  background-color: #f12020; }
+
+/*------------------------------------NOSOTROS----------------------------------------- */
+.quienesSomos {
+  width: 100%;
+  padding: 15px;
+  background-color: #303030;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 40px;
+  position: relative;
+  top: 56px; }
+
+.nosotros {
+  font-size: 25px;
+  float: none; }
+  .nosotros img {
+    height: 600px;
+    width: 800px;
+    display: block;
+    float: left;
+    margin: 10px; }
+  .nosotros p {
+    margin: 10px;
+    text-align: center;
+    padding-top: 200px;
+    font-family: 'Josefin Sans', sans-serif; }
+
+.nosotros_clear-float {
+  clear: both; }
+
+.nosotros__marcas--titulo {
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+  font-family: 'Roboto Serif', sans-serif;
+  background-color: #303030;
+  color: #ffffff;
+  font-size: 30px;
+  background-image: linear-gradient(to bottom, #34a07c, #2b5964); }
+
+.nosotros__marcas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px; }
+  .nosotros__marcas img {
+    transition: all 1s; }
+    .nosotros__marcas img:hover {
+      transform: scale(1.2, 1.2); }
+
+/* --------------------------------------CONSEJOS PARA TU AUTO--------------------------------- */
+.consejos {
+  position: absolute;
+  width: 60vw;
+  top: 10%;
+  left: 15%;
+  padding: 2% 5%;
+  margin: 20vh 0;
+  background-color: rgba(128, 128, 128, 0.582);
+  text-align: justify;
+  /* font-size: 20px; */
+  font-family: 'Roboto Serif', sans-serif;
+  box-shadow: #303030 6px 6px 6px 6px;
+  font-weight: 800;
+  overflow: scroll;
+  overflow-wrap: normal; }
+  .consejos strong {
+    font-family: 'Bebas Neue';
+    font-size: 100%;
+    color: #000000; }
+
+.titulo-consejos {
+  text-decoration: underline 3px;
+  text-align: center;
+  margin-bottom: 10px; }
+
+/*----------------------------MEDIA QUERIES------------------------------*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .presentacion {
+    width: 50vw;
+    left: 25%;
+    top: 40vh;
+    height: 50vh; }
+    .presentacion div p {
+      font-size: 30px; }
+  .mediosPago img {
+    width: 6vw;
+    height: 6vh; } }
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .presentacion {
+    width: 50vw;
+    left: 25%;
+    top: 40vh;
+    height: 50vh; }
+    .presentacion div p {
+      font-size: 20px; }
+  .mediosPago img {
+    width: 6vw;
+    height: 6vh; } }
+
+@media screen and (max-width: 426px) and (min-width: 376px) {
+  .presentacion {
+    width: 50vw;
+    left: 25%;
+    top: 35vh;
+    height: 65vh; }
+    .presentacion div p {
+      font-size: 20px; }
+  .mediosPago img {
+    width: 6vw;
+    height: 6vh; } }
+
+@media screen and (max-width: 376px) and (min-width: 321px) {
+  .presentacion {
+    width: 50vw;
+    left: 25%;
+    top: 40vh;
+    height: 60vh; }
+    .presentacion div p {
+      font-size: 16px; }
+  .mediosPago img {
+    width: 6vw;
+    height: 6vh; } }
+
+@media screen and (max-width: 320px) {
+  .presentacion {
+    width: 60vw;
+    left: 20%;
+    top: 50vh;
+    height: 50vh; }
+    .presentacion div p {
+      font-size: 16px; }
+  .mediosPago img {
+    width: 7vw;
+    height: 6vh; } }
