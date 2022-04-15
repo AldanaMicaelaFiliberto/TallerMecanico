@@ -22,23 +22,21 @@
     box-shadow: #4d4d4d 3px 3px 3px 3px;
     padding: 5px 15px;
     margin:0 0px;
+    width:30vw;
 
     label {
-        margin: 15px;
-        font-size: 15px;
-        display: block;
+        @extend .formulario--contacto;
     }
     
     input {
-        margin: 15px;
-        font-size: 15px;
-        display: block;
+        @extend .formulario--contacto;
     }
 
     text-area {
+        @extend .formulario--contacto;
+    }
 
-        margin: 15px;
-        font-size: 15px;
+    button {
         display: block;
     }
 

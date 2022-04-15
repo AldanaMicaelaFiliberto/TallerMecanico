@@ -1,0 +1,3 @@
+agregue keywords en todas las paginas
+agregue description en todas las paginas
+complete los "alt" de las imagenes

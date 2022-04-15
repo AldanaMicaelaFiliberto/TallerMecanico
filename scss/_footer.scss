@@ -1,13 +1,10 @@
 /* ----------------------------------------FOOTER-------------------------------------------------- */
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    @include display (flex, row, wrap, space-around); 
     align-items: center;
     width: 99vw;
-    background-color: #34597a;
+    background-color: map-get($estilos, color );
     padding: 1vh 0px;
 
     section {
@@ -27,9 +24,10 @@ footer {
                 list-style: none;
                 a{
                     line-height: 130%;
-                    text-align: center;
-                    text-decoration: none;
+                    text-align: map-get($estilos, text-align );
+                    text-decoration: underline;
                     font-size: 90%;
+                    color:black;
                 }
             }
         }

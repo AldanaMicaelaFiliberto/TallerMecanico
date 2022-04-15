@@ -13,8 +13,6 @@
     font-family: 'Roboto Serif', sans-serif;
     box-shadow: #303030 6px 6px 6px 6px;
     font-weight: 800;
-    overflow: scroll;
-    overflow-wrap: normal;
 
     strong {
         font-family: 'Bebas Neue';
@@ -26,6 +24,6 @@
 
 .titulo-consejos {
     text-decoration: underline 3px;
-    text-align: center;
+    text-align: map-get($estilos, text-align );
     margin-bottom: 10px;
 }

@@ -1,26 +1,23 @@
 /* --------------------------- SERVICIOS------------------------------ */
 
 .contenedor-servicios {
+    @include display (flex, row, wrap, space-around); 
     width: 90vw;
     margin: 0 auto;
     position:relative;
     top:20vh;
     padding:0vh 0 20vh 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .subtitulo {
-    text-align: center;
+    text-align: map-get($estilos, text-align );
     text-decoration: underline #1d7979;
 }
 .servicio {
     width: 300px;
     border: solid #aaaaaa 1px;
     margin: 30px 12px;
-    text-align: center;
+    text-align: map-get($estilos, text-align );
     font-size: 20px;
     padding: 10px 20px;
     transition: all 1s;

@@ -1,27 +1,15 @@
-@charset "UTF-8";
+/*------------------------------------------------EXTENDS-----------------------------------*/
+.formulario--contacto, .formulario-contacto label, .formulario-contacto input, .formulario-contacto text-area {
+  margin: 15px;
+  font-size: 15px;
+  display: block;
+  width: 20vw; }
+
+/*-----------------------------body---------------------------------*/
 * {
   margin: 0px;
   padding: 0px; }
 
-/* diseño-grid {
-    display: grid;
-    grid-template-rows: 2fr 5fr 2fr;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-areas: " nav nav nav " " main main main" " footer footer footer ";
-} */
-/* 
-nav {
-    grid-area: nav;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
- */
 /* -------------------------------------------------------NAV------------------------------------------------------- */
 .nav {
   background-color: #34597a;
@@ -31,8 +19,8 @@ footer {
   margin-top: -6vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-around; }
   .nav h1 {
     background: transparent;
     /* margin-left:-50px; */
@@ -44,16 +32,11 @@ footer {
     /* text-shadow:#000000 3px 3px 10px; */
     color: #ffffff; }
   .nav ul {
-    /* display: inline-block; */
-    /* margin-right: 100px;  */
-    /* padding: 10px; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
-    position: relative;
-    /* left: 250px; */
-    /* top: 2vw; */ }
+    justify-content: center;
+    position: relative; }
     .nav ul li {
       display: inline;
       margin: 2vw; }
@@ -84,9 +67,9 @@ footer {
 .presentacion {
   position: absolute;
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 50vw;
   top: 20vh;
   left: 23%;
@@ -102,7 +85,7 @@ footer {
     box-shadow: #303030 6px 6px 6px 6px; }
   .presentacion div p {
     padding: 1%;
-    font-size: 12px;
+    font-size: 30px;
     text-align: center;
     font-weight: 800;
     font-family: 'Roboto Serif', sans-serif; }
@@ -112,8 +95,8 @@ footer {
 .mediosPago {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: 2%; }
   .mediosPago img {
     width: 6vw;
@@ -148,9 +131,10 @@ footer {
 
 .imagenes {
   display: flex;
-  margin: auto;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
   width: 99vw; }
 
 .imagen {
@@ -163,8 +147,8 @@ footer {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   width: 99vw;
   background-color: #34597a;
@@ -181,8 +165,9 @@ footer {
       footer section ul li a {
         line-height: 130%;
         text-align: center;
-        text-decoration: none;
-        font-size: 90%; }
+        text-decoration: underline;
+        font-size: 90%;
+        color: black; }
 
 .mapa {
   width: 20vw;
@@ -195,15 +180,15 @@ footer {
 
 /* --------------------------- SERVICIOS------------------------------ */
 .contenedor-servicios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 90vw;
   margin: 0 auto;
   position: relative;
   top: 20vh;
-  padding: 0vh 0 20vh 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  padding: 0vh 0 20vh 0; }
 
 .subtitulo {
   text-align: center;
@@ -267,18 +252,9 @@ footer {
   display: inline-block;
   box-shadow: #4d4d4d 3px 3px 3px 3px;
   padding: 5px 15px;
-  margin: 0 0px; }
-  .formulario-contacto label {
-    margin: 15px;
-    font-size: 15px;
-    display: block; }
-  .formulario-contacto input {
-    margin: 15px;
-    font-size: 15px;
-    display: block; }
-  .formulario-contacto text-area {
-    margin: 15px;
-    font-size: 15px;
+  margin: 0 0px;
+  width: 30vw; }
+  .formulario-contacto button {
     display: block; }
 
 .contenedor-formularios {
@@ -334,6 +310,7 @@ footer {
 
 .nosotros__marcas {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 50px; }
@@ -355,9 +332,7 @@ footer {
   /* font-size: 20px; */
   font-family: 'Roboto Serif', sans-serif;
   box-shadow: #303030 6px 6px 6px 6px;
-  font-weight: 800;
-  overflow: scroll;
-  overflow-wrap: normal; }
+  font-weight: 800; }
   .consejos strong {
     font-family: 'Bebas Neue';
     font-size: 100%;
