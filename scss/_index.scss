@@ -15,12 +15,10 @@
     @include display (flex, row, wrap, space-around); 
     width: 50vw;
     top: 20vh;
-    left: 23%;
+    left: 25%;
     margin: 3vw auto;
     padding: 2%;
     background-color: transparent;
-    font-size: 5em;
-    box-shadow: #303030 6px 6px 6px 6px;
     transition: all 1s;
     
     &:hover{
@@ -31,7 +29,7 @@
     div {
         p{
             padding: 1%;
-            font-size: 30px;
+            font-size: 1.5em;
             text-align: map-get($estilos, text-align );
             font-weight: 800;
             font-family: 'Roboto Serif', sans-serif;
@@ -64,7 +62,7 @@
 
 .titulo-galeria {
     text-align: map-get($estilos, text-align );
-    font-size: 4vw;
+    font-size: 4em;
     font-family: 'Bebas Neue';
     background-color: #494949;
     margin: 30px;

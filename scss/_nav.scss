@@ -8,16 +8,14 @@
         z-index: 100;
         margin-top: -6vh;
         @include display (flex, row, wrap, space-around); 
+        padding: 10px 0;
 
         h1 {
             background: transparent;
-            /* margin-left:-50px; */
             display: inline-block;
             font-family: 'Bebas Neue';
             font-weight: 400;
             font-size: 76px;
-            /*border:solid;*/
-            /* text-shadow:#000000 3px 3px 10px; */
             color: #ffffff;
         }
         ul {
@@ -45,8 +43,7 @@
             border-radius: 0.5em;
             color: black;
             font-family: 'Roboto Serif', sans-serif;
-            font-size: 15px;
-            /* margin: 30px; */
+            font-size: 1em;
             
         }
 

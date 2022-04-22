@@ -1,7 +1,7 @@
 /*------------------------------------------------EXTENDS-----------------------------------*/
-.formulario--contacto, .formulario-contacto label, .formulario-contacto input, .formulario-contacto text-area {
-  margin: 15px;
-  font-size: 15px;
+.formulario--contacto, .formulario-contacto label, .formulario-contacto input {
+  margin: 3% 0;
+  font-size: 1em;
   display: block;
   width: 20vw; }
 
@@ -20,16 +20,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 10px 0; }
   .nav h1 {
     background: transparent;
-    /* margin-left:-50px; */
     display: inline-block;
     font-family: 'Bebas Neue';
     font-weight: 400;
     font-size: 76px;
-    /*border:solid;*/
-    /* text-shadow:#000000 3px 3px 10px; */
     color: #ffffff; }
   .nav ul {
     display: flex;
@@ -52,8 +50,7 @@
     border-radius: 0.5em;
     color: black;
     font-family: 'Roboto Serif', sans-serif;
-    font-size: 15px;
-    /* margin: 30px; */ }
+    font-size: 1em; }
 
 /* ---------------------------------INDEX------------------------------------------------ */
 .main-index {
@@ -72,12 +69,10 @@
   justify-content: space-around;
   width: 50vw;
   top: 20vh;
-  left: 23%;
+  left: 25%;
   margin: 3vw auto;
   padding: 2%;
   background-color: transparent;
-  font-size: 5em;
-  box-shadow: #303030 6px 6px 6px 6px;
   transition: all 1s; }
   .presentacion:hover {
     transform: scale(1, 1.2);
@@ -85,7 +80,7 @@
     box-shadow: #303030 6px 6px 6px 6px; }
   .presentacion div p {
     padding: 1%;
-    font-size: 30px;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 800;
     font-family: 'Roboto Serif', sans-serif; }
@@ -108,7 +103,7 @@
 
 .titulo-galeria {
   text-align: center;
-  font-size: 4vw;
+  font-size: 4em;
   font-family: 'Bebas Neue';
   background-color: #494949;
   margin: 30px;
@@ -233,79 +228,79 @@ footer {
     background: #f3cd21; } }
 
 /* -------------------------------------CONTACTO------------------------------------------------- */
-.info-contacto-titulo {
+.contenedor-formularios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 90vw;
+  height: 100vh;
+  top: 20%;
+  left: 5%;
+  margin: 2% auto;
+  padding: 1%;
+  overflow: auto; }
+
+.titulo-contenedores {
   font-family: Arial, Helvetica, sans-serif;
   border-color: black;
   color: brown;
-  font-size: 30px; }
+  font-size: 2em; }
 
 .info-contacto {
-  padding: 5px 15px;
-  display: inline-block;
-  line-height: 35px;
+  padding: 2% 3%;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1em;
   box-shadow: #4d4d4d 3px 3px 3px 3px;
-  margin: 0 30px; }
+  margin: 2% 3%;
+  overflow: auto; }
 
 .formulario-contacto {
-  display: inline-block;
   box-shadow: #4d4d4d 3px 3px 3px 3px;
-  padding: 5px 15px;
-  margin: 0 0px;
-  width: 30vw; }
+  padding: 2% 6%;
+  margin: 2% 2%;
+  overflow: auto; }
   .formulario-contacto button {
-    display: block; }
-
-.contenedor-formularios {
-  position: absolute;
-  top: 125px;
-  left: 10%;
-  display: flex;
-  justify-content: space-around;
-  margin: auto; }
-
-.button {
-  background-color: #f12020; }
+    display: block;
+    background-color: #f12020; }
 
 /*------------------------------------NOSOTROS----------------------------------------- */
 .quienesSomos {
-  width: 100%;
-  padding: 15px;
+  width: 93%;
+  padding: 3%;
+  position: fixed;
   background-color: #303030;
   text-align: center;
   color: white;
   font-family: 'Roboto Serif', sans-serif;
-  font-size: 40px;
+  font-size: 3em;
   position: relative;
-  top: 56px; }
+  top: 10vh; }
 
 .nosotros {
-  font-size: 25px;
-  float: none; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 2em;
+  position: relative;
+  top: 10vh; }
   .nosotros img {
-    height: 600px;
-    width: 800px;
-    display: block;
-    float: left;
-    margin: 10px; }
+    width: 50%;
+    margin: auto; }
   .nosotros p {
-    margin: 10px;
     text-align: center;
-    padding-top: 200px;
-    font-family: 'Josefin Sans', sans-serif; }
-
-.nosotros_clear-float {
-  clear: both; }
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5%; }
 
 .nosotros__marcas--titulo {
   text-align: center;
-  margin: 30px;
-  padding: 10px;
+  margin: 5% 2%;
+  padding: 1%;
   font-family: 'Roboto Serif', sans-serif;
   background-color: #303030;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 2em;
   background-image: linear-gradient(to bottom, #34a07c, #2b5964); }
 
 .nosotros__marcas {
@@ -313,7 +308,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 50px; }
+  margin: 5%; }
   .nosotros__marcas img {
     transition: all 1s; }
     .nosotros__marcas img:hover {
@@ -323,19 +318,20 @@ footer {
 .consejos {
   position: absolute;
   width: 60vw;
+  height: 80vh;
   top: 10%;
   left: 15%;
   padding: 2% 5%;
   margin: 20vh 0;
   background-color: rgba(128, 128, 128, 0.582);
   text-align: justify;
-  /* font-size: 20px; */
   font-family: 'Roboto Serif', sans-serif;
   box-shadow: #303030 6px 6px 6px 6px;
-  font-weight: 800; }
+  font-weight: 800;
+  overflow-y: auto; }
   .consejos strong {
     font-family: 'Bebas Neue';
-    font-size: 100%;
+    font-size: 2em;
     color: #000000; }
 
 .titulo-consejos {
@@ -344,62 +340,133 @@ footer {
   margin-bottom: 10px; }
 
 /*----------------------------MEDIA QUERIES------------------------------*/
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  /*-----------INDEX-----------*/
   .presentacion {
     width: 50vw;
     left: 25%;
-    top: 40vh;
-    height: 50vh; }
-    .presentacion div p {
-      font-size: 30px; }
+    top: 40vh; }
   .mediosPago img {
     width: 6vw;
-    height: 6vh; } }
+    height: 6vh; }
+  /*------------CONTACTO-----------*/
+  .contenedor-formularios {
+    top: 20%;
+    overflow: visible;
+    height: 0; }
+  .quienesSomos {
+    top: 7vh; } }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*-----------INDEX-----------*/
+  .presentacion {
+    width: 50vw;
+    left: 25%;
+    top: 40vh; }
+  .mediosPago img {
+    width: 6vw;
+    height: 6vh; }
+  /*------------CONTACTO-----------*/
+  .contenedor-formularios {
+    top: 30%;
+    overflow: visible; }
+  .quienesSomos {
+    top: 20vh; }
+  .nosotros {
+    top: 20vh; }
+    .nosotros p {
+      margin: 5%; }
+  .nosotros__marcas--titulo {
+    margin-top: 8%; } }
 
 @media screen and (max-width: 768px) and (min-width: 426px) {
+  /*-----------INDEX-----------*/
   .presentacion {
     width: 50vw;
     left: 25%;
-    top: 40vh;
-    height: 50vh; }
-    .presentacion div p {
-      font-size: 20px; }
+    top: 40vh; }
   .mediosPago img {
-    width: 6vw;
-    height: 6vh; } }
+    width: 6vw; }
+  .imagen {
+    width: 75vw; }
+  /*------------CONTACTOS-----------*/
+  .contenedor-formularios {
+    top: 35%; }
+  .quienesSomos {
+    top: 20vh; }
+  .nosotros {
+    top: 20vh; }
+    .nosotros p {
+      margin: 5%;
+      font-size: 0.5em; }
+  .nosotros__marcas--titulo {
+    margin-top: 12%; } }
 
 @media screen and (max-width: 426px) and (min-width: 376px) {
+  /*-----------INDEX-----------*/
   .presentacion {
     width: 50vw;
     left: 25%;
-    top: 35vh;
-    height: 65vh; }
-    .presentacion div p {
-      font-size: 20px; }
+    top: 35vh; }
   .mediosPago img {
-    width: 6vw;
-    height: 6vh; } }
+    width: 6vw; }
+  .imagen {
+    width: 75vw; }
+  /*------------CONTACTO-----------*/
+  .contenedor-formularios {
+    top: 45%; }
+  .quienesSomos {
+    top: 24vh; }
+  .nosotros {
+    top: 25vh; }
+    .nosotros p {
+      margin: 5%;
+      font-size: 0.5em; }
+  .nosotros__marcas--titulo {
+    margin-top: 35%; } }
 
 @media screen and (max-width: 376px) and (min-width: 321px) {
+  /*-----------INDEX-----------*/
   .presentacion {
     width: 50vw;
     left: 25%;
-    top: 40vh;
-    height: 60vh; }
-    .presentacion div p {
-      font-size: 16px; }
+    top: 40vh; }
   .mediosPago img {
-    width: 6vw;
-    height: 6vh; } }
+    width: 6vw; }
+  .imagen {
+    width: 85vw; }
+  /*------------CONTACTO-----------*/
+  .contenedor-formularios {
+    top: 40%; }
+  .quienesSomos {
+    top: 23vh; }
+  .nosotros {
+    top: 25vh; }
+    .nosotros p {
+      margin: 5%;
+      font-size: 0.5em; }
+  .nosotros__marcas--titulo {
+    margin-top: 40%; } }
 
 @media screen and (max-width: 320px) {
+  /*-----------INDEX-----------*/
   .presentacion {
     width: 60vw;
     left: 20%;
-    top: 50vh;
-    height: 50vh; }
-    .presentacion div p {
-      font-size: 16px; }
+    top: 50vh; }
   .mediosPago img {
-    width: 7vw;
-    height: 6vh; } }
+    width: 7vw; }
+  .imagen {
+    width: 90vw; }
+  /*------------CONTACTO-----------*/
+  .contenedor-formularios {
+    top: 40%; }
+  .quienesSomos {
+    top: 23vh; }
+  .nosotros {
+    top: 25vh; }
+    .nosotros p {
+      margin: 5%;
+      font-size: 0.5em; }
+  .nosotros__marcas--titulo {
+    margin-top: 45%; } }

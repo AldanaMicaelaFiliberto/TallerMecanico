@@ -1,57 +1,55 @@
 /*------------------------------------NOSOTROS----------------------------------------- */
 
 .quienesSomos {
-    width: 100%;
-    padding: 15px;
+    width: 93%;
+    padding: 3%;
+    position:fixed;
     background-color: #303030;
     text-align: map-get($estilos, text-align );
     color: white;
     font-family: 'Roboto Serif', sans-serif;
-    font-size: 40px;
+    font-size: 3em;
     position:relative;
-    top:56px;
+    top:10vh;
 }
 
 .nosotros {
-    font-size: 25px;
-    float: none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2em;
+    position:relative;
+    top:10vh;
+
 
     img {
-        height: 600px;
-        width: 800px;
-        display: block;
-        float: left;
-        margin: 10px;
+        width: 50%;
+        margin:auto;
     }
-
+        
     p {
-        margin: 10px;
-        text-align: map-get($estilos, text-align );
-        padding-top: 200px;
-        font-family: 'Josefin Sans', sans-serif;
+            text-align: map-get($estilos, text-align );
+            font-family: 'Josefin Sans', sans-serif;
+            margin:5%;
     }
+    
 }
 
-
-
-.nosotros_clear-float {
-    clear: both;
-}
 
 .nosotros__marcas--titulo {
     text-align: map-get($estilos, text-align );
-    margin: 30px;
-    padding: 10px;
+    margin: 5% 2%;
+    padding: 1%;
     font-family: 'Roboto Serif', sans-serif;
     background-color: #303030;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 2em;
     background-image: linear-gradient(to bottom , rgb(52, 160, 124),#2b5964 );
 }
 
 .nosotros__marcas {
     @include display (flex, row, wrap, space-around);
-    margin: 50px;
+    margin: 5%;
     img{
         transition: all 1s;
 

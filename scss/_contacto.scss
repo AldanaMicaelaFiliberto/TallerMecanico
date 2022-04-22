@@ -1,28 +1,41 @@
 /* -------------------------------------CONTACTO------------------------------------------------- */
 
-.info-contacto-titulo {
+.contenedor-formularios{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position:absolute;
+    width:90vw;
+    height: 100vh;
+    top:20%;
+    left:5%;
+    margin:2% auto;
+    padding:1%;
+    overflow: auto;
+}
+
+.titulo-contenedores {
     font-family: Arial, Helvetica, sans-serif;
     border-color: black;
     color: brown;
-    font-size: 30px;
+    font-size: 2em;
+}
+.info-contacto {
+    padding: 2% 3%;
+    font-weight: 500;
+    font-size: 1em;
+    box-shadow: #4d4d4d 3px 3px 3px 3px;
+    margin:2% 3%;
+    overflow: auto;
 }
 
-.info-contacto {
-    padding: 5px 15px;
-    display: inline-block;
-    line-height: 35px;
-    font-weight: 500;
-    font-size: 20px;
-    box-shadow: #4d4d4d 3px 3px 3px 3px;
-    margin:0 30px;
-}
 
 .formulario-contacto {
-    display: inline-block;
     box-shadow: #4d4d4d 3px 3px 3px 3px;
-    padding: 5px 15px;
-    margin:0 0px;
-    width:30vw;
+    padding: 2% 6%;
+    margin:2% 2%;
+    overflow: auto;
 
     label {
         @extend .formulario--contacto;
@@ -32,26 +45,11 @@
         @extend .formulario--contacto;
     }
 
-    text-area {
-        @extend .formulario--contacto;
-    }
+
 
     button {
         display: block;
+        background-color: #f12020;
     }
 
-}
-
-.contenedor-formularios{
-    position:absolute;
-    top:125px;
-    left:10%;
-    display:flex;
-    justify-content: space-around;
-    margin:auto;
-}
-
-.button {
-    background-color: #f12020;
-    
 }
