@@ -6,7 +6,7 @@
 
 .fondo {
     width: 99vw;
-    opacity: 0.7;
+    opacity: 0.5;
     height: 900px;
 }
 
@@ -33,9 +33,11 @@
             text-align: map-get($estilos, text-align );
             font-weight: 800;
             font-family: 'Roboto Serif', sans-serif;
+            color: antiquewhite;
 
-            b{
+            b {
                 font-family: 'Monoton', cursive;
+                color:rgb(33, 243, 117);
             }
         }
     }

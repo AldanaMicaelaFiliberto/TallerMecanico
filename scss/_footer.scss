@@ -17,6 +17,7 @@ footer {
         }
         h3 {
             font-size: 150%;
+            color: springgreen;
         }
 
         ul {
@@ -27,21 +28,10 @@ footer {
                     text-align: map-get($estilos, text-align );
                     text-decoration: underline;
                     font-size: 90%;
-                    color:black;
+                    color:rgb(33, 243, 117);
                 }
             }
         }
-
-        // section ul li a,
-        // section a {
-        //     line-height: 130%;
-        //     text-align: center;
-        //     text-decoration: none;
-        //     font-size: 90%;
-        // }
-
-
-
 
     }
 }
@@ -58,5 +48,6 @@ footer {
 
     p{
         font-size: 90%;
+        color:rgb(33, 243, 117);
     }
 }

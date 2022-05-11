@@ -3,16 +3,20 @@
   margin: 3% 0;
   font-size: 1em;
   display: block;
-  width: 20vw; }
+  width: 20vw;
+  color: white; }
 
 /*-----------------------------body---------------------------------*/
 * {
   margin: 0px;
   padding: 0px; }
 
+body {
+  background-color: #2b2a2a; }
+
 /* -------------------------------------------------------NAV------------------------------------------------------- */
 .nav {
-  background-color: #34597a;
+  background-color: #3e3d3d;
   width: 99vw;
   position: fixed;
   z-index: 100;
@@ -28,7 +32,11 @@
     font-family: 'Bebas Neue';
     font-weight: 400;
     font-size: 76px;
-    color: #ffffff; }
+    color: #f3cd21;
+    transition: all 1s;
+    animation: lubrimax 3s infinite; }
+    .nav h1:hover {
+      transform: scale(1.2, 1.2); }
   .nav ul {
     display: flex;
     flex-direction: row;
@@ -39,8 +47,7 @@
       display: inline;
       margin: 2vw; }
       .nav ul li:hover a {
-        color: white;
-        font-weight: 700; }
+        color: #fff700; }
   .nav a {
     padding: 1vw;
     text-decoration: none;
@@ -58,7 +65,7 @@
 
 .fondo {
   width: 99vw;
-  opacity: 0.7;
+  opacity: 0.5;
   height: 900px; }
 
 .presentacion {
@@ -83,9 +90,11 @@
     font-size: 1.5em;
     text-align: center;
     font-weight: 800;
-    font-family: 'Roboto Serif', sans-serif; }
+    font-family: 'Roboto Serif', sans-serif;
+    color: antiquewhite; }
     .presentacion div p b {
-      font-family: 'Monoton', cursive; }
+      font-family: 'Monoton', cursive;
+      color: #21f375; }
 
 .mediosPago {
   display: flex;
@@ -146,7 +155,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 99vw;
-  background-color: #34597a;
+  background-color: #3e3d3d;
   padding: 1vh 0px; }
   footer section {
     font-size: 100%;
@@ -154,7 +163,8 @@ footer {
     footer section a img {
       width: 30px; }
     footer section h3 {
-      font-size: 150%; }
+      font-size: 150%;
+      color: springgreen; }
     footer section ul li {
       list-style: none; }
       footer section ul li a {
@@ -162,7 +172,7 @@ footer {
         text-align: center;
         text-decoration: underline;
         font-size: 90%;
-        color: black; }
+        color: #21f375; }
 
 .mapa {
   width: 20vw;
@@ -171,7 +181,8 @@ footer {
 .footer-section {
   align-self: flex-end; }
   .footer-section p {
-    font-size: 90%; }
+    font-size: 90%;
+    color: #21f375; }
 
 /* --------------------------- SERVICIOS------------------------------ */
 .contenedor-servicios {
@@ -230,22 +241,20 @@ footer {
 /* -------------------------------------CONTACTO------------------------------------------------- */
 .contenedor-formularios {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
   position: absolute;
   width: 90vw;
-  height: 100vh;
-  top: 20%;
+  height: 105vh;
+  top: 10%;
   left: 5%;
   margin: 2% auto;
   padding: 1%;
-  overflow: auto; }
+  padding-bottom: 7%; }
 
 .titulo-contenedores {
   font-family: Arial, Helvetica, sans-serif;
   border-color: black;
-  color: brown;
+  color: #fff200;
   font-size: 2em; }
 
 .info-contacto {
@@ -254,16 +263,21 @@ footer {
   font-size: 1em;
   box-shadow: #4d4d4d 3px 3px 3px 3px;
   margin: 2% 3%;
-  overflow: auto; }
+  overflow: auto;
+  color: white;
+  border-color: #d1e406; }
 
 .formulario-contacto {
   box-shadow: #4d4d4d 3px 3px 3px 3px;
   padding: 2% 6%;
   margin: 2% 2%;
+  color: white;
+  border: #eaff00 10px;
   overflow: auto; }
   .formulario-contacto button {
     display: block;
-    background-color: #f12020; }
+    color: black;
+    background-color: #d1e406; }
 
 /*------------------------------------NOSOTROS----------------------------------------- */
 .quienesSomos {
@@ -291,6 +305,7 @@ footer {
   .nosotros p {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    color: white;
     margin: 5%; }
 
 .nosotros__marcas--titulo {
@@ -351,9 +366,7 @@ footer {
     height: 6vh; }
   /*------------CONTACTO-----------*/
   .contenedor-formularios {
-    top: 20%;
-    overflow: visible;
-    height: 0; }
+    top: 30%; }
   .quienesSomos {
     top: 7vh; } }
 
@@ -368,8 +381,7 @@ footer {
     height: 6vh; }
   /*------------CONTACTO-----------*/
   .contenedor-formularios {
-    top: 30%;
-    overflow: visible; }
+    top: 30%; }
   .quienesSomos {
     top: 20vh; }
   .nosotros {

@@ -16,7 +16,14 @@
             font-family: 'Bebas Neue';
             font-weight: 400;
             font-size: 76px;
-            color: #ffffff;
+            color: rgb(243, 205, 33);
+            transition: all 1s;
+            animation: lubrimax 3s infinite;
+
+                &:hover  {
+                    transform: scale(1.2,1.2);
+                }
+
         }
         ul {
             @include display (flex, row, wrap, center); 
@@ -27,8 +34,8 @@
                 margin: 2vw;
 
                 &:hover a {
-                    color: white;
-                    font-weight: 700;
+                    color: rgb(255, 247, 0);
+
                 }
             }
         }
@@ -41,7 +48,7 @@
             border: solid 3px;
             box-shadow: #4d4d4d 3px 3px;
             border-radius: 0.5em;
-            color: black;
+            color: rgb(0, 0, 0);
             font-family: 'Roboto Serif', sans-serif;
             font-size: 1em;
             
