@@ -306,7 +306,7 @@ footer {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    margin: 5%; }
+    margin: 10%; }
 
 .nosotros__marcas--titulo {
   text-align: center;
@@ -387,7 +387,8 @@ footer {
   .nosotros {
     top: 20vh; }
     .nosotros p {
-      margin: 5%; }
+      margin: 10%;
+      font-size: 0.5em; }
   .nosotros__marcas--titulo {
     margin-top: 8%; } }
 
@@ -409,7 +410,7 @@ footer {
   .nosotros {
     top: 20vh; }
     .nosotros p {
-      margin: 5%;
+      margin: 10%;
       font-size: 0.5em; }
   .nosotros__marcas--titulo {
     margin-top: 12%; } }
@@ -432,7 +433,7 @@ footer {
   .nosotros {
     top: 25vh; }
     .nosotros p {
-      margin: 5%;
+      margin: 10%;
       font-size: 0.5em; }
   .nosotros__marcas--titulo {
     margin-top: 35%; } }
@@ -455,7 +456,7 @@ footer {
   .nosotros {
     top: 25vh; }
     .nosotros p {
-      margin: 5%;
+      margin: 10%;
       font-size: 0.5em; }
   .nosotros__marcas--titulo {
     margin-top: 40%; } }
@@ -478,7 +479,7 @@ footer {
   .nosotros {
     top: 25vh; }
     .nosotros p {
-      margin: 5%;
+      margin: 10%;
       font-size: 0.5em; }
   .nosotros__marcas--titulo {
     margin-top: 45%; } }
