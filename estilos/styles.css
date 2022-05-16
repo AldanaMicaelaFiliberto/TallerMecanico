@@ -306,7 +306,8 @@ footer {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    margin: 10%; }
+    margin: 15%;
+    font-size: 0.5em; }
 
 .nosotros__marcas--titulo {
   text-align: center;
@@ -456,7 +457,7 @@ footer {
   .nosotros {
     top: 25vh; }
     .nosotros p {
-      margin: 10%;
+      margin: 15%;
       font-size: 0.5em; }
   .nosotros__marcas--titulo {
     margin-top: 40%; } }
@@ -479,7 +480,7 @@ footer {
   .nosotros {
     top: 25vh; }
     .nosotros p {
-      margin: 10%;
+      margin: 20%;
       font-size: 0.5em; }
   .nosotros__marcas--titulo {
     margin-top: 45%; } }
